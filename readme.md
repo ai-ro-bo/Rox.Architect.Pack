@@ -1,6 +1,6 @@
 ### `Rox Architect Pack for .Net`
 
-Rox Camera Provider enables access to the native device camera for acquiring images.
+Rox Architect Pack consists of components and extension methods to help software conform to a chosen architecture pattern.
 
 | | Links |
 | --- | --- |
