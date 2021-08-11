@@ -9,4 +9,4 @@ Rox Architect Pack consists of components and extension methods to help software
 | **NuGet** | [Rox.Architect.Pack](https://www.nuget.org/packages/Rox.Architect.Pack/) |
 
 ---
-Visit [`airobo.software`](https://airobo.software/) for more information.
+Visit [*`AiRoBo Software`*](https://airobo.software/) for more information.
