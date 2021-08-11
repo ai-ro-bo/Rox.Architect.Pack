@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+	<metadata>
+		<id>Rox.Architect.Pack</id>
+		<title>Rox Architect Pack for .Net</title>
+		<version>1.0.0-pre1</version>
+		<repository type="git" url="https://github.com/ai-ro-bo/Rox.Architect.Pack.git" branch="rel" />
+		<authors>AiRoBo Software</authors>
+		<license type="file">res\nuget-license.txt</license>
+		<projectUrl>https://rox.tools/architect</projectUrl>
+		<icon>res\nuget-logo.png</icon>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<description>Rox Architect Pack for .Net contains a collection of components to help software conform to a chosen architecture pattern.</description>
+		<readme>res\nuget-readme.md</readme>
+		<releaseNotes>
+[Version 1.0.0]
+* Created new solution and projects and reimplemented components on all platforms.
+* Changed licensed to MIT.
+* Provided source code in GitHub repository.
+
+[Build Configuration]
+* Visual Studio for Windows v16.11.0
+* Visual Studio for Mac v8.10.7.17
+* Windows 10 v21H1.19043.1110
+* macOS : Big Sur 11.5.1
+
+[Targets]
+* .NetStandard2.0
+		</releaseNotes>
+		<copyright>©2011-2021 AiRoBo Software</copyright>
+		<tags>rox architect airobo rox.tools .net</tags>
+		<dependencies>
+			<group targetFramework="netstandard2.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<!-- Resources -->
+		<file src="..\res\nuget-license.txt" target="res\nuget-license.txt" />
+		<file src="..\res\nuget-logo.png" target="res\nuget-logo.png" />
+		<file src="..\res\nuget-readme.md" target="res\nuget-readme.md" />
+
+		<!-- netstandard2.0 -->
+		<file src="..\src\Collection\bin\Release\netstandard2.0\Rox.Collection.dll" target="lib\netstandard2.0\Rox.Collection.dll" />
+		<file src="..\src\Collection\bin\Release\netstandard2.0\Rox.Collection.pdb" target="lib\netstandard2.0\Rox.Collection.pdb" />
+
+		<!-- New NuGet due to EntityFramework dependancy -->
+		<!-- file src="..\src\Collection\bin\Release\netstandard2.0\Rox.Collection.Entity.dll" target="lib\netstandard2.0\Rox.Collection.Entity.dll" / -->
+		<!-- file src="..\src\Collection\bin\Release\netstandard2.0\Rox.Collection.Entity.pdb" target="lib\netstandard2.0\Rox.Collection.Entity.pdb" / -->
+
+		<file src="..\src\Comparer\bin\Release\netstandard2.0\Rox.Comparer.dll" target="lib\netstandard2.0\Rox.Comparer.dll" />
+		<file src="..\src\Comparer\bin\Release\netstandard2.0\Rox.Comparer.pdb" target="lib\netstandard2.0\Rox.Comparer.pdb" />
+
+		<file src="..\src\Property\bin\Release\netstandard2.0\Rox.Property.dll" target="lib\netstandard2.0\Rox.Property.dll" />
+		<file src="..\src\Property\bin\Release\netstandard2.0\Rox.Property.pdb" target="lib\netstandard2.0\Rox.Property.pdb" />
+	</files>
+</package>
