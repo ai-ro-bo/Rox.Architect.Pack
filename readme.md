@@ -7,6 +7,7 @@ Rox Architect Pack for .Net contains a range of components that help software co
 | *.NetStandard2.0* | Y |
 | *.NetStandard2.1* | X |
 
+| | |
 | --- | --- |
 | **Instructions** | [rox.tools/architect](https://rox.tools/architect/) |
 | **Sample** | [rox.gallery/architect](https://rox.gallery/architect/) |
@@ -15,6 +16,7 @@ Rox Architect Pack for .Net contains a range of components that help software co
 ---
 If you like this software then try our other offerings:
 
+| | |
 | --- | --- |
 | [NoBS Services for .Net](https://nobs.services/) | A No Bullsh!t service controller for .Net server and clients. |
 | [AiRoBo.design Studio](https://airobo.design/) | Images, GitHub Pages Templates, Style sheets, and more. |
