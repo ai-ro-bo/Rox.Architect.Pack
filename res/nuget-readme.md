@@ -9,7 +9,7 @@ Rox Architect Pack for .Net contains a range of components that help software co
 
 | | | |
 | --- | --- | --- |
-| **Source** | &nbsp; &nbsp; | [Rox.Architect.Pack](https://github.com/ai-ro-bo/Rox.Architect.Pack) |
+| **GitHub** | &nbsp; &nbsp; | [Rox.Architect.Pack](https://github.com/ai-ro-bo/Rox.Architect.Pack/) |
 | **Instructions** | | [rox.tools/architect](https://rox.tools/architect/) |
 | **Sample** | | [rox.gallery/architect](https://rox.gallery/architect/) |
 
