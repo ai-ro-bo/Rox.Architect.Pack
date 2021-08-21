@@ -1,27 +1,27 @@
 ### **`Rox Architect Pack for .Net`**
 ---
-Rox Architect Pack for .Net contains a collection of components to help software conform to a chosen architecture.
+Rox Architect Pack for .Net contains a range of components that help software conform to a chosen architecture pattern.
 
-*Targets .NetStandard2.0*
-
-*Part of [`Rox Tools for .Net`](https://rox.tools/) by [`AiRoBo Software`](https://airobo.software/)*
-
-| | |
+| Target | .Net |
 | --- | --- |
-| [Source](https://github.com/ai-ro-bo/Rox.Architect.Pack/) | &nbsp; &nbsp; | Source code for Architect Pack. |
-| [NuGet](https://www.nuget.org/packages/Rox.Architect.Pack/) | | NuGet package for Architect Pack. |
-| [Instructions](https://rox.tools/architect/) | | Instructions for usage. |
-| [Sample](https://rox.gallery/architect/) | | Sample project for **Rox Tools for .Net** architect. |
+| *.NetStandard2.0* | Y |
+| *.NetStandard2.1* | X |
+
+| | | |
+| --- | --- | --- |
+| **GitHub** | &nbsp; &nbsp; | [Rox.Architect.Pack](https://github.com/ai-ro-bo/Rox.Architect.Pack/) |
+| **Instructions** | | [rox.tools/architect](https://rox.tools/architect/) |
+| **Sample** | | [rox.gallery/architect](https://rox.gallery/architect/) |
 
 ---
 If you like this software then try our other offerings:
 
-| | |
-| --- | --- |
-| [No Bullsh!t Service Controller for .Net](https://nobs.services/) | &nbsp; &nbsp; | A No Bullsh!t collection of services for server and clients. |
-| [AiRoBo.design Studio](https://airobo.design/) | | Style sheets, Images, GitHub Pages Templates, and more. |
+| | | |
+| --- | --- | --- |
+| [NoBS Services for .Net](https://nobs.services/) | &nbsp; &nbsp; | A No Bullsh!t service controller for .Net server and clients. |
+| [AiRoBo.design Studio](https://airobo.design/) | | Images, GitHub Pages Templates, Style sheets, and more. |
 | [Rox Tools for .Net](https://rox.tools/) | | A range of open source components and controls. |
 | [Rox Samples Gallery](https://rox.gallery/) | | Samples of Rox components and controls usage. |
 
 ---
-Visit [*`AiRoBo Software`*](https://airobo.software/) for more information.
+***Rox Architect Pack for .Net*** *forms part of* [***`Rox Tools for .Net`***](https://rox.tools/) *by* [***`AiRoBo Software`***](https://airobo.software/)

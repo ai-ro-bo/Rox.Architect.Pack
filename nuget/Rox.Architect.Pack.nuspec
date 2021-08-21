@@ -10,13 +10,15 @@
 		<projectUrl>https://rox.tools/architect</projectUrl>
 		<icon>res\nuget-logo.png</icon>
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
-		<description>Rox Architect Pack for .Net contains a collection of components to help software conform to a chosen architecture pattern.</description>
+		<description>Rox Architect Pack for .Net contains a range of components that help software conform to a chosen architecture pattern. Targets .NetStandard2.0.</description>
 		<readme>res\nuget-readme.md</readme>
 		<releaseNotes>
 [Version 1.0.0]
 * Created new solution and projects and reimplemented components on all platforms.
 * Changed licensed to MIT.
 * Provided source code in GitHub repository.
+* Created https://rox.tools/architect/ instruction page.
+* Created skeleton https://rox.gallery/architect/ sample page.
 
 [Build Configuration]
 * Visual Studio for Windows v16.11.0
