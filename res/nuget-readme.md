@@ -1,27 +1,18 @@
-### **`Rox Architect Pack for .Net`**
----
-Rox Architect Pack for .Net contains a range of components that help software conform to a chosen architecture pattern.
+![Rox Architect for .Net](https://raw.githubusercontent.com/pit-bob/res/dev/rox/architect/net/header.svg)
 
-| Target | .Net |
-| --- | --- |
-| *.NetStandard2.0* | Y |
-| *.NetStandard2.1* | X |
+**Rox Architect for .Net** contains a range of components that help software conform to a chosen architecture pattern.
 
-| | | |
-| --- | --- | --- |
-| **GitHub** | &nbsp; &nbsp; | [Rox.Architect.Pack](https://github.com/ai-ro-bo/Rox.Architect.Pack/) |
-| **Instructions** | | [rox.tools/architect](https://rox.tools/architect/) |
-| **Sample** | | [rox.gallery/architect](https://rox.gallery/architect/) |
+[![Rox Architect Instructions](https://raw.githubusercontent.com/pit-bob/res/dev/rox/architect/instructions.svg)](https://rox.tools/architect) &nbsp; [![NuGet](https://raw.githubusercontent.com/pit-bob/res/dev/nuget/icon.svg)](https://www.nuget.org/packages/Rox.Architect.Net) &nbsp; [![GitHub](https://raw.githubusercontent.com/pit-bob/res/dev/github/icon.svg)](https://github.com/ai-ro-bo/Rox.Architect.Net)
 
 ---
-If you like this software then try our other offerings:
+If you like this software then try our related components...
 
-| | | |
-| --- | --- | --- |
-| [NoBS Services for .Net](https://nobs.services/) | &nbsp; &nbsp; | A No Bullsh!t service controller for .Net server and clients. |
-| [AiRoBo.design Studio](https://airobo.design/) | | Images, GitHub Pages Templates, Style sheets, and more. |
-| [Rox Tools for .Net](https://rox.tools/) | | A range of open source components and controls. |
-| [Rox Samples Gallery](https://rox.gallery/) | | Samples of Rox components and controls usage. |
+[![Rox Architect](https://raw.githubusercontent.com/pit-bob/res/dev/rox/architect/icon.svg)](https://rox.tools/architect) &nbsp; [![Rox Layout](https://raw.githubusercontent.com/pit-bob/res/dev/rox/layout/icon.svg)](https://rox.tools/layout) &nbsp; [![Rox Video](https://raw.githubusercontent.com/pit-bob/res/dev/rox/video/icon.svg)](https://rox.tools/video) &nbsp; [![Rox Camera](https://raw.githubusercontent.com/pit-bob/res/dev/rox/camera/icon.svg)](https://rox.tools/camera)
 
 ---
-***Rox Architect Pack for .Net*** *forms part of* [***`Rox Tools for .Net`***](https://rox.tools/) *by* [***`AiRoBo Software`***](https://airobo.software/)
+Check out some of the other stuff we do...
+
+[![Rox Tools](https://raw.githubusercontent.com/pit-bob/res/dev/rox/tools/icon.svg)](https://rox.tools) &nbsp; [![NoBS Services](https://raw.githubusercontent.com/pit-bob/res/dev/nobs/icon.svg)](https://nobs.services) &nbsp; [![AiRoBo.design Studio](https://raw.githubusercontent.com/pit-bob/res/dev/airobo/design/icon.svg)](https://airobo.design) &nbsp; [![ai-drone-bo](https://raw.githubusercontent.com/pit-bob/res/dev/aidronebo/icon.svg)](https://airobo.software/aidronebo) &nbsp; [![\wtf](https://raw.githubusercontent.com/pit-bob/res/dev/wtf/icon.svg)](https://backslash.wtf)
+
+---
+*Visit us at* [![AiRoBo](https://raw.githubusercontent.com/pit-bob/res/dev/airobo/software/badge.svg)](https://airobo.software)

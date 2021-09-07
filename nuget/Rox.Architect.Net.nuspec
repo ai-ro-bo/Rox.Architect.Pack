@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
 	<metadata>
-		<id>Rox.Architect.Pack</id>
-		<title>Rox Architect Pack for .Net</title>
-		<version>1.0.0-pre3</version>
-		<repository type="git" url="https://github.com/ai-ro-bo/Rox.Architect.Pack.git" branch="rel" />
+		<id>Rox.Architect.Net</id>
+		<title>Rox Architect for .Net</title>
+		<version>1.0.0-pre1</version>
+		<repository type="git" url="https://github.com/ai-ro-bo/Rox.Architect.Net.git" branch="rel" />
 		<authors>AiRoBo Software</authors>
 		<license type="file">res\nuget-license.txt</license>
 		<projectUrl>https://rox.tools/architect</projectUrl>
 		<icon>res\nuget-logo.png</icon>
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
-		<description>Rox Architect Pack for .Net contains a range of components that help software conform to a chosen architecture pattern. Targets .NetStandard2.0.</description>
+		<description>Rox Architect for .Net contains a range of components that help software conform to a chosen architecture pattern. Targets .NetStandard2.0.</description>
 		<readme>res\nuget-readme.md</readme>
 		<releaseNotes>
 [Version 1.0.0]
@@ -21,10 +21,10 @@
 * Created skeleton https://rox.gallery/architect/ sample page.
 
 [Build Configuration]
-* Visual Studio for Windows v16.11.0
+* Visual Studio for Windows v16.11.2
 * Visual Studio for Mac v8.10.7.17
 * Windows 10 v21H1.19043.1110
-* macOS : Big Sur 11.5.1
+* macOS : Big Sur 11.5.2
 
 [Targets]
 * .NetStandard2.0

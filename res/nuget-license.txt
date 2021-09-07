@@ -1,4 +1,4 @@
-Rox Architect Pack for .Net
+Rox Architect for .Net
 
 The MIT License (MIT)
 
