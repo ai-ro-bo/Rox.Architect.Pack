@@ -36,7 +36,7 @@ namespace Rox
             {
                 Type modelType = typeof(TModel);
                 ConstructorInfo modelConstructor = modelType.GetConstructor(Type.EmptyTypes);
-                if (modelConstructor == null) throw new ArgumentNullException(nameof(CreateModel), $"{modelType.Name} does not contain an empty constructor.\n\nYou must provide a CreateModel function.");
+                if (modelConstructor == null) throw new ArgumentNullException(nameof(CreateModel), $"{modelType.Name} does not contain an empty constructor.\n\nYou must provide a CreateEntity function.");
 
                 CreateModel = () =>
                 {

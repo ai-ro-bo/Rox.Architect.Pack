@@ -15,11 +15,15 @@ namespace Rox
     {
         #region Constructor
 
+        private readonly ObservableCollection<TModel> Models;
         private readonly Func<TModel, TViewModel> CreateViewModel;
         private readonly ViewModelObservableCollection ViewModels;
 
-        public ViewModelCollection(Func<TModel, TViewModel> createViewModel = null)
+        public ViewModelCollection(ObservableCollection<TModel> models, Func<TModel, TViewModel> createViewModel = null)
         {
+            Models = models
+                ?? throw new ArgumentNullException(nameof(models));
+
             if (createViewModel != null)
             {
                 CreateViewModel = createViewModel;
@@ -28,8 +32,8 @@ namespace Rox
             {
                 Type modelType = typeof(TModel);
                 Type viewModelType = typeof(TViewModel);
-                ConstructorInfo viewModelConstructor = viewModelType.GetConstructor(new[] { modelType });
-                if (viewModelConstructor == null) throw new ArgumentNullException(nameof(CreateViewModel), $"{viewModelType.Name} does not contain a constructor with one parameter of type {modelType.Name}.\n\nYou must provide a CreateViewModel function.");
+                ConstructorInfo viewModelConstructor = viewModelType.GetConstructor(new[] { modelType })
+                    ?? throw new ArgumentNullException(nameof(CreateViewModel), $"{viewModelType.Name} does not contain a constructor with one parameter of type {modelType.Name}.\n\nYou must provide a CreateViewModel function.");
 
                 CreateViewModel = model =>
                 {
@@ -39,47 +43,54 @@ namespace Rox
                 };
             }
             ViewModels = new ViewModelObservableCollection(this);
+
+            foreach (TModel model in Models)
+            {
+                TViewModel viewModel = CreateViewModel(model);
+
+                if (viewModel != null) ViewModels.Add(viewModel);
+            }
+
+            Models.CollectionChanged += ModelsCollectionChanged;
         }
 
         #endregion
 
         #region Set Models
 
-        private IEnumerable<TModel> Models;
+        //public ViewModelCollection<TViewModel, TModel> SetModels<TNotify>(TNotify models)
+        //    where TNotify : IEnumerable<TModel>, INotifyCollectionChanged
+        //{
+        //    //Remove old handler - this will also filter null
+        //    if (Models is INotifyCollectionChanged removeModels) removeModels.CollectionChanged -= ModelsCollectionChanged;
 
-        public ViewModelCollection<TViewModel, TModel> SetModels<TNotify>(TNotify models)
-            where TNotify : IEnumerable<TModel>, INotifyCollectionChanged
-        {
-            //Remove old handler - this will also filter null
-            if (Models is INotifyCollectionChanged removeModels) removeModels.CollectionChanged -= ModelsCollectionChanged;
+        //    //Clear the viewModel collection from start
+        //    int originalCount = ViewModels.Count;
+        //    int removeOldIndex = 0;
+        //    for (int oldIndex = 0; oldIndex < originalCount; oldIndex++)
+        //    {
+        //        ViewModels.RemoveAt(removeOldIndex);
+        //    }
 
-            //Clear the viewModel collection from start
-            int originalCount = ViewModels.Count;
-            int removeOldIndex = 0;
-            for (int oldIndex = 0; oldIndex < originalCount; oldIndex++)
-            {
-                ViewModels.RemoveAt(removeOldIndex);
-            }
+        //    if (models != null)
+        //    {
+        //        //Add each viewModel created for each model
+        //        foreach (TModel model in models)
+        //        {
+        //            TViewModel viewModel = CreateViewModel(model);
 
-            if (models != null)
-            {
-                //Add each viewModel created for each model
-                foreach (TModel model in models)
-                {
-                    TViewModel viewModel = CreateViewModel(model);
+        //            if (viewModel != null) ViewModels.Add(viewModel);
+        //        }
 
-                    if (viewModel != null) ViewModels.Add(viewModel);
-                }
+        //        //Add new handler
+        //        models.CollectionChanged += ModelsCollectionChanged;
+        //    }
 
-                //Add new handler
-                models.CollectionChanged += ModelsCollectionChanged;
-            }
+        //    Models = models;
 
-            Models = models;
-
-            //Fluent API
-            return this;
-        }
+        //    //Fluent API
+        //    return this;
+        //}
 
         #endregion
 
